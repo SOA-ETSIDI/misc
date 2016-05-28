@@ -11,7 +11,7 @@ tipos <- c("Acciones Cooperativas", "Laboratorio", "Teoría y Problemas")
 sTipos <- c("AC", "Lab", "TyP")
 
 ## Aulas
-aulas <- read.csv2('../data/aulas.csv',
+aulas <- read.csv2('../misc/aulas.csv',
                    stringsAsFactors = FALSE)
 aulas <- aulas$Aula
 
