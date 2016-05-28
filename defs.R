@@ -1,0 +1,69 @@
+##################################################################
+## Definiciones generales de la ETSIDI
+##################################################################
+
+
+## Días de la semana
+dias <- c("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
+
+## Tipos de docencia
+tipos <- c("Acciones Cooperativas", "Laboratorio", "Teoría y Problemas")
+sTipos <- c("AC", "Lab", "TyP")
+
+## Aulas
+aulas <- read.csv2('../data/aulas.csv',
+                   stringsAsFactors = FALSE)
+aulas <- aulas$Aula
+
+## Código y nombre de departamentos
+dptoCode <- c('D180', ## Ingeniería Eléctrica, Electrónica Automática y Física Aplicada
+              'D190', ## Ingeniería Mecánica, Química y Diseño Industrial
+              'D440', ## Matemáticas del área Industrial
+              'D240', ## Lingüística Aplicada a la Ciencia y a la Tecnología
+              'D400'  ## Ingeniería de Organización, Administración de Empresas y Estadística
+              )
+
+dptoName <- c('Ingeniería Eléctrica, Electrónica Automática y Física Aplicada',
+              'Ingeniería Mecánica, Química y Diseño Industrial',
+              'Matemáticas del área Industrial',
+              'Lingüística Aplicada a la Ciencia y a la Tecnología',
+              'Ingeniería de Organización, Administración de Empresas y Estadística')
+dptos <- data.frame(codigo = dptoCode,
+                    nombre = dptoName,
+                    stringsAsFactors = FALSE)
+
+## Titulaciones
+grados <- paste0(56, c('IA', 'IE', 'IM', 'IQ', 'DD'))
+names(grados) <- paste('Grado en Ingeniería',
+                       c('Electrónica Industrial y Automática',
+                         'Eléctrica',
+                         'Mecánica',
+                         'Química',
+                         'en Diseño Industrial y Desarrollo de Producto')
+                       )
+dobleg <- '56DM'
+names(dobleg) <- 'Doble Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto y en Ingeniería Mecánica'
+
+grados <- c(grados, dobleg)
+
+grupos <- c("M101", "D102", "Q103", "A104", "E105", "EE105",
+            "M106", "D107", "DM107", "Q108", "A109", "E100", 
+            "M201", "DM201", "D202", "Q203", "A204", "E205",
+            "M206", "A207", "E208", "EE208",
+            "M301", "A302", "E303",
+            "M306", "D307", "DM307", "Q308", "A309",
+            "M401", "M406", "D402", "Q403", "A404", "E407")
+
+masters <- c('56AA', '56AB', '56AC')
+names(masters) <- paste('Máster Universitario en Ingeniería',
+                        c('de Producción',
+                          'Electromecánica',
+                          'en Diseño Industrial')
+                        )
+
+otrosMaster <- c('05AX', '06AH', '02AK')
+names(otrosMaster) <- c('Máster Universitario en Ingenieria de la Energía',
+                        'Máster Universitario en Eficiencia Energética en la Edificación, la Industria y el Transporte',
+                        'Máster Universitario en Tecnología para el Desarrollo Humano y la Cooperación')
+
+titulaciones <- c(grados, masters, otrosMaster)
