@@ -11,7 +11,7 @@ tipos <- c("Acciones Cooperativas", "Laboratorio", "Teoría y Problemas")
 sTipos <- c("AC", "Lab", "TyP")
 
 ## Aulas
-aulas <- read.csv2('../misc/aulas.csv',
+aulas <- read.csv2('../data/aulas.csv',
                    stringsAsFactors = FALSE)
 aulas <- aulas$Aula
 
@@ -51,7 +51,7 @@ grupos <- c("M101", "D102", "Q103", "A104", "E105", "EE105",
             "M201", "DM201", "D202", "Q203", "A204", "E205",
             "M206", "A207", "E208", "EE208",
             "M301", "A302", "E303",
-            "M306", "D307", "DM307", "Q308", "A309",
+            "M306", "D307", "DM306", "Q308", "A309",
             "M401", "M406", "D402", "Q403", "A404", "E407")
 
 masters <- c('56AA', '56AB', '56AC')
