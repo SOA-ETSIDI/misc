@@ -36,7 +36,7 @@ MoT <- function(x)
 ## Reduce string de tipo de docencia
 abTipo <- function(x)
 {
-    idx <- match(x, tipos)
+    idx <- charmatch(x, tipos)
     sTipos[idx]
 }
 
@@ -224,6 +224,12 @@ titlecase <- function(x)
 }
 
 
+## Es un evento de un día, o una secuencia? Empleado en csv2pdf.R y csv2ics.R
+isOneDay <- function(inicio, final)
+{
+    (is.na(final) | inicio == final)
+}
+
 ## Función para generar un evento de calendario en forma iCal
 makeEvent <- function(titulo, descripcion, categoria,
                       inicio, final, lugar = "",
