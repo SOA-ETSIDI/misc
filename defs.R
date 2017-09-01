@@ -41,8 +41,10 @@ names(grados) <- paste('Grado en Ingeniería',
                          'Química',
                          'en Diseño Industrial y Desarrollo de Producto')
                        )
-dobleg <- '56DM'
-names(dobleg) <- 'Doble Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto y en Ingeniería Mecánica'
+
+dobleg <- c('56DM', '56EE')
+names(dobleg) <- c('Doble Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto y en Ingeniería Mecánica',
+                   'Doble Grado en Ingeniería Eléctrica y en Ingeniería Electrónica')
 
 grados <- c(grados, dobleg)
 
