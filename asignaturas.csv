@@ -391,30 +391,23 @@
 "56AA";563000003;"Ingeniería de la Calidad Total";1
 "56AA";563000004;"Automatización y Robótica";1
 "56AA";563000005;"Diseño y Fabricación Asistidos por Ordenador (CAD-CAM)";1
-"56AA";563000006;"Análisis de Productos por Elementos Finitos";1
+"56AA";563000006;"Análisis de Productos por Elementos Finitos";2
 "56AA";563000007;"Producción Limpia, Ecología Industrial y Desarrollo Sostenible";1
 "56AA";563000008;"Visión Artificial";2
 "56AA";563000009;"Aplicaciones Industriales de los Láseres";2
 "56AA";563000010;"Certificación y Calificación de Productos";2
-"56AA";563000011;"Metrología Industrial";2
 "56AA";563000012;"Seguridad y Ergonomía";2
 "56AA";563000013;"Diseño y Cálculo de Uniones Estructurales";2
 "56AA";563000014;"Tecnologías Aplicadas al Mantenimiento Industrial";2
 "56AA";563000015;"Selección y Diseño de Materiales";2
 "56AA";563000016;"Trabajo Fin de Máster (Sistemas de Producción IP)";2
-"56AA";563000017;"Modelado y Simulación";1
-"56AA";563000018;"Estadística Aplicada a la Investigación";1
-"56AA";563000019;"Métodos Numéricos Avanzados y Ecuaciones Diferenciales";1
-"56AA";563000020;"Información Científica-Técnica";1
-"56AA";563000021;"Materiales Avanzados: Síntesis y Caracterización";2
+"56AA";563000017;"Modelado y Simulación";2
 "56AA";563000022;"Análisis y Simulación Térmica";2
-"56AA";563000023;"Metrología Dimensional";2
-"56AA";563000024;"Procesado de Señales e Imágenes";2
 "56AA";563000025;"Diseño del Montaje en Fabricación Industrial";2
-"56AA";563000026;"Dinámica de Sistemas y su Aplicación a la Ingeniería";2
-"56AA";563000027;"Caracterización y Ensayo de Equipos y Materiales Eléctricos";2
 "56AA";563000028;"Trabajo Fin de Máster (Tecnologías de Fabricación II)";2
 "56AA";563000029;"Prácticas Externas";2
+"56AA";563000094;"Metrología";2
+"56AA";563000088;"Matemáticas aplicadas a la ingeniería de producción";1
 "56AB";563000030;"Instrumentación y Control";1
 "56AB";563000031;"Conocimiento Avanzados de Materiales y Aplicaciones";1
 "56AB";563000032;"Mecánica de los Materiales";1
@@ -428,24 +421,9 @@
 "56AB";563000040;"Computadores y Programación";2
 "56AB";563000041;"CAD-CAM-CAE";2
 "56AB";563000042;"Robótica";2
-"56AB";563000043;"Impactos y Gestión Ambiental";2
-"56AB";563000044;"Gestión de la Innovación en la Industria Eléctrica y Electromecánica";2
-"56AB";563000045;"Idioma Profesional (Inglés o Francés)";2
-"56AB";563000046;"Trabajo Fin de Máster (Mecatrónica)";2
-"56AB";563000047;"Diseño Electromecánico de líneas I";1
-"56AB";563000048;"Diseño Electromecánico de líneas II";2
-"56AB";563000049;"Ensayos de Equipos y Materiales en Sistemas e Instalaciones Eléctricas";2
-"56AB";563000050;"Planificación y Desarrollo de Redes de Distribución";2
-"56AB";563000051;"Diseño de Instalaciones de Puesta a Tierra";2
-"56AB";563000052;"Diseño Integral de Subestaciones y Centros de Transformación";2
-"56AB";563000053;"Coordinación de Aislamiento en las Redes de Distribución";2
-"56AB";563000054;"Topografía y Construcción";2
-"56AB";563000055;"Impactos y Gestión Ambiental";2
-"56AB";563000056;"Gestión de la Innovación en la Industria Eléctrica y Electromecánica";2
-"56AB";563000057;"Idioma Profesional (Inglés o Francés)";2
-"56AB";563000058;"Trabajo Fin de Máster (Distribución de Energía Eléctrica)";2
-"56AB";563000059;"Prácticas Externas -MECATRÓNICA";2
-"56AB";563000060;"Prácticas Externas -DISTRIBUCIÓN DE ENERGIA ELECTRICA";2
+"56AB";563000045;"Idioma Profesional";2
+"56AB";563000046;"Trabajo Fin de Máster";2
+"56AB";563000059;"Prácticas Externas";2
 "56AC";563000061;"Metodología del diseño y desarrollo de productos";1
 "56AC";563000062;"Certificación y calificación de productos";1
 "56AC";563000063;"Gestión de la innovación y marketing";1
