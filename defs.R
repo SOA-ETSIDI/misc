@@ -33,7 +33,7 @@ dptoCode <- c('D180', ## Ingeniería Eléctrica, Electrónica Automática y Fís
 
 dptoName <- c('Ingeniería Eléctrica, Electrónica Automática y Física Aplicada',
               'Ingeniería Mecánica, Química y Diseño Industrial',
-              'Matemáticas del área Industrial',
+              'Matemática Aplicada a la Ingeniería Industrial',
               'Lingüística Aplicada a la Ciencia y a la Tecnología',
               'Ingeniería de Organización, Administración de Empresas y Estadística')
 dptos <- data.frame(codigo = dptoCode,
