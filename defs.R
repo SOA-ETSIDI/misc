@@ -14,6 +14,14 @@ cursoActual <- '2017-18'
 ## Días de la semana
 dias <- c("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
 
+## Hora Tuthora y Comedor
+tuthoraM <- c("11.30", "12.00")
+tuthoraT <- c("16.30", "17.00")
+
+comedorM <- c("14.00", "15.30")
+comedorT <- c("13.00", "14.30")
+
+
 ## Tipos de docencia
 tipos <- c("Acciones Cooperativas", "Laboratorio", "Teoría y Problemas")
 sTipos <- c("AC", "Lab", "TyP")

@@ -223,6 +223,9 @@ titlecase <- function(x)
     do.call(c, TC)
 }
 
+## Añade {} a un vector de character
+braces <- function(x) paste0("{", x, "}", collapse = "")
+
 
 ## Es un evento de un día, o una secuencia? Empleado en csv2pdf.R y csv2ics.R
 isOneDay <- function(inicio, final)
