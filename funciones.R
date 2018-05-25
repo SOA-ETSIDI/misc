@@ -30,7 +30,7 @@ MoT <- function(x)
 {
     N <- nchar(x)
     id <- as.numeric(substr(x, N, N))
-    ifelse(id %in% 1:5 | x == "M406", 'M', 'T')
+    ifelse(id %in% 1:5, 'M', 'T')
 }
 
 ## Reduce string de tipo de docencia
