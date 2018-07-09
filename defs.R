@@ -16,10 +16,10 @@ dias <- c("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
 
 ## Hora Tuthora y Comedor
 tuthoraM <- c("11.30", "12.00")
-tuthoraT <- c("16.30", "17.00")
+tuthoraT <- c("17.00", "17.30")
 
 comedorM <- c("14.00", "15.30")
-comedorT <- c("13.00", "14.30")
+comedorT <- c("13.30", "15.00")
 
 
 ## Tipos de docencia
