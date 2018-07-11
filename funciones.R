@@ -90,7 +90,7 @@ sumaHoras <- function(tutoria)
 }
 
 ## Secuencia de horas en formato character
-hhSeq <- function(h1 = '08:15', h2 = '20:45', by = '15 min')
+hhSeq <- function(h1 = '08:00', h2 = '21:00', by = '30 min')
 {
     h1 <- as.POSIXct(h1, format = '%H:%M')
     h2 = as.POSIXct(h2, format = '%H:%M')
