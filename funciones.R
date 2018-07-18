@@ -109,6 +109,21 @@ diffHour <- function(h1, h2)
     delta <- as.POSIXct(h2, format = '%H:%M') - as.POSIXct(h1, format = '%H:%M')
     as.numeric(delta, units = 'hours')
 }
+## Devuelve el valor mínimo de un vector de horas en formato caracter
+minHour <- function(h)
+{
+    h <- as.POSIXct(h, format = '%H:%M')
+    m <- min(h)
+    hour(m)
+}
+## Devuelve el valor máximo de un vector de horas en formato caracter
+maxHour <- function(h)
+{
+    h <- as.POSIXct(h, format = '%H:%M')
+    M <- max(h)
+    M <- round(M, "hour")
+    hour(M)
+}
 
 ## TITLECASE
 # This is a list of words that we generally do not want to capitalize.
