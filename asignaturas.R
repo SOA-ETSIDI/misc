@@ -1,5 +1,8 @@
 ## Descarga información de API-UPM
 library(jsonlite)
+library(data.table)
+
+source('defs.R')
 
 getJSON <- function(codigo)
 {
@@ -39,4 +42,53 @@ MUIE <- getJSON("56AE")
 MUIDI <- getJSON("56AC")
 
 infoMasters <- rbind(MUIP, MUIE, MUIDI)
-write.csv2(infoMasters, file = 'asignaturasMaster.csv', row.names = FALSE)
+
+
+IM <- getJSON("56IM")
+IQ <- getJSON("56IQ")
+IA <- getJSON("56IA")
+IE <- getJSON("56IE")
+DD <- getJSON("56DD")
+
+infoGrado <- rbind(IM, IQ, IA, IE, DD)
+
+DM <- getJSON("56DM")
+EE <- getJSON("56EE")
+
+infoDobleGrado <- rbind(DM, EE)
+
+infoETSIDI <- rbind(infoGrado, infoDobleGrado, infoMasters)
+infoETSIDI <- as.data.table(infoETSIDI)
+
+
+## Comparo con fichero local
+asignaturas <- fread('../misc/asignaturas.csv')
+asignaturas[, Codigo := as.numeric(Codigo)]
+
+## Asignaturas que están en el fichero Asignaturas.csv pero no en la web UPM
+difETSIDI <- fsetdiff(asignaturas[, .(Titulacion, Codigo)],
+                 infoETSIDI[, .(Titulacion, Codigo)])
+## Muestro resultados para titulaciones ETSIDI
+asignaturas[Titulacion %in% c(grados, masters) &
+            Codigo %in% difETSIDI$Codigo]
+
+## Asignaturas que están en la web UPM pero no están en el fichero Asignaturas.csv
+difUPM <- fsetdiff(infoETSIDI[, .(Titulacion, Codigo)],
+                   asignaturas[, .(Titulacion, Codigo)])
+## Muestro resultados para titulaciones ETSIDI
+infoETSIDI[Titulacion %in% c(grados, masters) &
+           Codigo %in% difUPM$Codigo]
+
+## Genero un fichero por titulación. Deberían contener prácticas en
+## empresa, optativas de movilidad, y optativas de otras titulaciones
+lapply(c(grados, masters), function(titulo)
+    write.csv2(infoETSIDI[Titulacion == titulo &
+                          Codigo %in% difUPM$Codigo],
+               file = paste0('difAsignaturas_', titulo, '.csv'),
+               row.names = FALSE)
+    )
+
+## write.csv2(infoMasters, file = 'asignaturasMaster.csv', row.names = FALSE)
+## write.csv2(infoGrado, file = 'asignaturasGrado.csv', row.names = FALSE)
+## write.csv2(infoDobleGrado, file = 'asignaturasDobleGrado.csv', row.names = FALSE)
+## write.csv2(infoETSIDI, file = 'asignaturasETSIDI.csv', row.names = FALSE)
