@@ -86,7 +86,10 @@ names(otrosMaster) <- c('Máster Universitario en Ingenieria de la Energía',
                         'Máster Universitario en Eficiencia Energética en la Edificación, la Industria y el Transporte',
                         'Máster Universitario en Tecnología para el Desarrollo Humano y la Cooperación')
 
-titulaciones <- c(grados, masters, otrosMaster)
+optativasIS <- c('IS')
+names(optativasIS) <- "International Semester"
+
+titulaciones <- c(grados, masters, otrosMaster, optativasIS)
 
 ##################################################################
 ## Logos
