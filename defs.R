@@ -2,7 +2,7 @@
 ## Curso y Semestre
 ##################################################################
 
-semestreActual <- 1
+semestreActual <- 2
 
 cursoActual <- '2018-19'
 
@@ -72,7 +72,7 @@ grupos <- c("M101", "D102", "Q103", "A104", "E105", "EE105",
             "M306", "D307", "DM306", "Q308", "A309",
             "M401", "D402", "DM401", "DM406", "Q403", "A404",
             "M406", "E407", "A408",
-            "DM502", "EE403")
+            "DM502", "EE403", "EE507")
 
 masters <- c('56AD', '56AE', '56AC')
 names(masters) <- paste('Máster Universitario en Ingeniería',
