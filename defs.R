@@ -74,7 +74,7 @@ grupos <- c("M101", "D102", "Q103", "A104", "E105", "EE105",
             "M406", "E407", "A408",
             "DM502", "EE403", "EE507")
 
-masters <- c('56AD', '56AE', '56AC')
+masters <- c('56AF', '56AE', '56AC')
 names(masters) <- paste('Máster Universitario en Ingeniería',
                         c('de Producción',
                           'Electromecánica',
