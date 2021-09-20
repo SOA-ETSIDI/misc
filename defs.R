@@ -26,10 +26,10 @@ comedorT <- c("13.30", "15.00")
 tipos <- c("Acciones Cooperativas", "Laboratorio", "Teoría y Problemas")
 sTipos <- c("AC", "Lab", "TyP")
 
-## Aulas
-aulas <- read.csv2('../misc/aulas.csv',
-                   stringsAsFactors = FALSE)
-aulas <- aulas$Aula
+## ## Aulas
+## aulas <- read.csv2('../misc/aulas.csv',
+##                    stringsAsFactors = FALSE)
+## aulas <- aulas$Aula
 
 ## Código y nombre de departamentos
 dptoCode <- c('D180', ## Ingeniería Eléctrica, Electrónica Automática y Física Aplicada
