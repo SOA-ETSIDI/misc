@@ -27,9 +27,18 @@ tipos <- c("Acciones Cooperativas", "Laboratorio", "Teoría y Problemas")
 sTipos <- c("AC", "Lab", "TyP")
 
 ## ## Aulas
-## aulas <- read.csv2('../misc/aulas.csv',
-##                    stringsAsFactors = FALSE)
-## aulas <- aulas$Aula
+aulasGrado <- c("A01", "A02", "A03", "A04",
+                "A05", "A06", "A07", "A08",
+                "A11", "A12", "A13", "A14", "A15", "A16", "A17",
+                "A21", "A22",
+                "B01", "B02",
+                "B11", "B12",
+                "B21", "B22",
+                "B31", "B32")
+
+aulasADI <- c("ADI-1", "ADI-2", "ADI-pi")
+
+aulas <- c(aulasGrado, aulasADI)
 
 ## Código y nombre de departamentos
 dptoCode <- c('D180', ## Ingeniería Eléctrica, Electrónica Automática y Física Aplicada
