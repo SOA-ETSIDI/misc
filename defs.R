@@ -2,7 +2,7 @@
 ## Curso y Semestre
 ##################################################################
 
-semestreActual <- 1
+semestreActual <- 2
 
 cursoActual <- '2021-22'
 
