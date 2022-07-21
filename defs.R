@@ -2,9 +2,9 @@
 ## Curso y Semestre
 ##################################################################
 
-semestreActual <- 2
+semestreActual <- 1
 
-cursoActual <- '2021-22'
+cursoActual <- '2022-23'
 
 ##################################################################
 ## Definiciones generales de la ETSIDI
