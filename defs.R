@@ -2,9 +2,9 @@
 ## Curso y Semestre
 ##################################################################
 
-semestreActual <- 2
+semestreActual <- 1
 
-cursoActual <- '2021-22'
+cursoActual <- '2022-23'
 
 ##################################################################
 ## Definiciones generales de la ETSIDI
@@ -90,7 +90,7 @@ names(masters) <- paste('Máster Universitario en Ingeniería',
                           'en Diseño Industrial')
                         )
 
-otrosMaster <- c('05AX', '06AH', '20AE')
+otrosMaster <- c('05BK', '06AH', '20AE')
 names(otrosMaster) <- c('Máster Universitario en Ingenieria de la Energía',
                         'Máster Universitario en Eficiencia Energética en la Edificación, la Industria y el Transporte',
                         'Máster Universitario en Estrategias y Tecnologías para el Desarrollo')
