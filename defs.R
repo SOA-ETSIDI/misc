@@ -90,11 +90,12 @@ names(masters) <- paste('Máster Universitario en Ingeniería',
                           'en Diseño Industrial')
                         )
 
-otrosMaster <- c('05BK', '06AH', '20AE', '09BP')
+otrosMaster <- c('05BK', '06AH', '20AE', '09BP', '05BH')
 names(otrosMaster) <- c('Máster Universitario en Ingenieria de la Energía',
                         'Máster Universitario en Eficiencia Energética en la Edificación, la Industria y el Transporte',
                         'Máster Universitario en Estrategias y Tecnologías para el Desarrollo',
-                        'Master Universitario En Energia Solar Fotovoltaica')
+                        'Master Universitario en Energia Solar Fotovoltaica',
+                        'Máster Universitario en Automática y Robótica')
 
 optativasIS <- c('IS')
 names(optativasIS) <- "International Semester"
