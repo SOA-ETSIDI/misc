@@ -28,9 +28,12 @@ whichCurso <- function(x)
 ## Grupos de matriculacion, mañana o tarde
 MoT <- function(x)
 {
-    N <- nchar(x)
-    id <- as.numeric(substr(x, N, N))
-    ifelse(id %in% 1:5, 'M', 'T')
+    ## Extrae el código numérico del nombre del grupo
+    id <- as.numeric(gsub("\\D", "", x))
+    ## El último dígito sirve para identificar si es turno de mañana o
+    ## tarde
+    ld <- id %% 10
+    ifelse(ld %in% 1:5, 'M', 'T')
 }
 
 ## Reduce string de tipo de docencia
