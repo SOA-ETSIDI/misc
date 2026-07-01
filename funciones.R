@@ -46,18 +46,37 @@ abTipo <- function(x)
 ## Función para enlazar la Guía de aprendizaje
 isEven <- function(x) x %% 2 == 0
 
-GAurl <- function(cod, grado, sem, curso = '2015-16')
+GAurl <- function(cod, grado, sem, curso, idioma = "ES")
 {
     mainURL <- "https://www.upm.es/comun_gauss/publico/guias/"
-    semString <- paste0(ifelse(isEven(sem), 2, 1), 'S')
+    
+    year <- as.numeric(substr(curso, 1, 4))
 
-    paste0(mainURL,
-           curso, '/',
-           semString,
-           '/GA_', grado,
-           '_', cod,
-           '_', semString,
-           '_', curso, '.pdf')
+    ## A partir del curso 2026-2027 se produce un cambio en la
+    ## plataforma de Guías.
+    if (year < 2026)
+    {
+        semString <- paste0(ifelse(isEven(sem), 2, 1), 'S')
+        
+        paste0(mainURL,
+               curso, '/',
+               semString,
+               '/GA_', grado,
+               '_', cod,
+               '_', semString,
+               '_', curso, '.pdf')
+    }
+    else
+    {## Ya no se tiene en cuenta el semestre pero se incorpora el
+     ## idioma
+        paste0(mainURL,
+               curso, '/',
+               'GA_', grado,
+               '_', cod,
+               '_', idioma,
+               '_', curso,
+               '.pdf')
+    }
 }
 
 ## Extrae el hash del nombre de un fichero docencia_*.csv o tutoria_*.csv
